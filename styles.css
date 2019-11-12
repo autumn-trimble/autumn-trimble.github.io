@@ -1,203 +1,82 @@
 html {
   scroll-behavior: smooth;
 }
-
-
-* {
-  margin:0px;
-  padding:0px;
-}
-
 body {
-  position: relative;
-  background: whitesmoke;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 10px;
-    padding-left: 17rem;
-  }
-}
-
-#image {
-  display: flex;
-  width:200px;
-  margin:auto;
-}
-
-p {
-  display: block;
-  margin: auto;
-  padding: 20px;
-  font-size: 1em;
-  font-family: Quicksand;
-}
-/* Headings */
-h1 {
-  color: rgb(25, 161, 196);
-  font-size: 4rem;
-
-}
-h2 {
-  color: rgb(1, 92, 145);
-  font-display: bold;
-  font-size: 3.5rem;
-}
-h3, h6 {
-  color: rgb(130, 161, 255);
-}
-
-
-.dates {
-  color: rgb(54, 145, 202);
-}
-
-p #lead {
-  text-align: center;
-  display: block;
-}
-
-ul {
-  list-style-type: square;
-}
-
-
-/* Scroll Down Icon */
-.arrow a{ 
-  color: rgb(25, 161, 196); 
-  text-decoration: none;
-}
-
-.arrow {
-  text-align: right;
-  margin: 8% 0;
-  padding-top: 100px;
+  color: #3e4144;
+  background-color: rgba(247, 210, 202, 0.281);
+  font-family: Montserrat;
   
 }
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+.navbar {
+  margin-bottom: 0;
+  background-color: #F2B9AC;
+  font-size: 1rem !important;
+  line-height: 3rem !important;
+  letter-spacing: .25rem;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-
-
-/* Navbar */
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 800;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-}
-
-#sideNav .navbar-toggler:focus {
-  outline-color: #F1F1F2;
-}
-#sideNav {
-  background: #F2B9AC !important;
-}
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-    background: #F2B9AC !important;
-  }
-  #sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-    background: #F2B9AC !important;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto; 
-    
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-    
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
-}
-
-/* Info Resume Section Padding */
-section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  max-width: 75rem;
-}
-
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-
-/* Social Icons */
-.social-icons a {
-  display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
-  background-color: rgb(25, 161, 196);
+.navbar li a, .navbar .navbar-brand {
   color: #fff !important;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  margin-right: 1rem;
 }
 
-.social-icons a:last-child {
-  margin-right: 1rem;
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #F2B9AC !important;
+  background-color: #fff !important;
 }
 
-.social-icons a:hover {
-  background-color:rgb(130, 161, 255);
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.name {
+  font-family: Lobster;
+}
+.jumbotron {
+  background-color: rgba(247, 210, 202, 0.281);
+  color: #3e4144;
+  height: 100vh;
+  margin-bottom: 0;
+
+}
+.jumbotron h1 {
+  color: rgb(1, 195, 243);
+}
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  padding-top: 5%;
+}
+
+@media (max-width: 576px) {
+  .img-fluid {
+    padding-top: 15%;
+  }
+}
+
+
+
+@media (min-width: 576px) {
+  .section {
+    height: 100vh;
+    padding-top: 25% auto;
+  }
+}
+
+hr {
+  border: 0;
+  height: .5rem;
+  background: linear-gradient(0.25turn,#e66465, #9198e5);
+}
+
+.social-icons .fab {
+  font-size: 2rem;
+  color: rgb(1, 195, 243);
+  letter-spacing: .25rem;
+}
+
+h2 {
+  font-weight: 700;
 }
