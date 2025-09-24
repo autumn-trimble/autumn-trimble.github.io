@@ -1,243 +1,597 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autumn Trimble</title>
-  <link href="google88a09cf422061df6.html">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat:400,700|Quicksand:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <title>Autumn Trimble | Technical Program Manager</title>
+  <meta name="description" content="Technical Program Manager blending systems thinking, mission-driven strategy, and people-first leadership to build resilient products and teams.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              blue: '#23395B',
+              teal: '#2BB5A0',
+              dusk: '#0F172A',
+              cloud: '#E7F5FF',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root {
+      scroll-padding-top: 6rem;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
 </head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased" id="top">
+  <div class="relative isolate">
+    <div class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[28rem] bg-gradient-to-br from-brand.blue/20 via-brand.teal/10 to-slate-900/60 blur-3xl"></div>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" id="page-top">
-
-    <!-- <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <span class="d-block d-sm-none">Autumn Trimble</span>
-          <span class="d-none d-sm-block">
-            <img class="img-fluid img-profile mx-auto mb-2" src="images/headshot.jpg">
-          </span>
+    <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur" style="padding-top: env(safe-area-inset-top);">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+        <a href="#top" class="text-lg font-semibold tracking-tight text-white">
+          Autumn Trimble
         </a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button id="nav-toggle" class="inline-flex items-center justify-center rounded-md p-2 text-slate-200 transition hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand.teal md:hidden" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-            </li>
-          </ul>
+        <div id="primary-navigation" class="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
+          <a href="#about" class="transition hover:text-white">About</a>
+          <a href="#experience" class="transition hover:text-white">Experience</a>
+          <a href="#highlights" class="transition hover:text-white">Impact</a>
+          <a href="#skills" class="transition hover:text-white">Core Strengths</a>
+          <a href="#projects" class="transition hover:text-white">Personal Projects</a>
+          <a href="#insights" class="transition hover:text-white">Insights</a>
+          <a href="#contact" class="transition hover:text-white">Contact</a>
+          <a href="resume.pdf" class="rounded-full border border-brand.teal/70 px-4 py-1.5 font-semibold text-brand.teal transition hover:bg-brand.teal hover:text-slate-950">Resume</a>
         </div>
-      </nav> -->
+      </div>
+      <div id="mobile-navigation" class="hidden border-t border-white/10 bg-slate-950/90 px-6 py-4 md:hidden">
+        <div class="flex flex-col gap-3 text-sm font-medium text-slate-300">
+          <a href="#about" class="transition hover:text-white">About</a>
+          <a href="#experience" class="transition hover:text-white">Experience</a>
+          <a href="#highlights" class="transition hover:text-white">Impact</a>
+          <a href="#skills" class="transition hover:text-white">Core Strengths</a>
+          <a href="#projects" class="transition hover:text-white">Personal Projects</a>
+          <a href="#insights" class="transition hover:text-white">Insights</a>
+          <a href="#contact" class="transition hover:text-white">Contact</a>
+          <a href="resume.pdf" class="rounded-full border border-brand.teal/70 px-4 py-1.5 font-semibold text-brand.teal transition hover:bg-brand.teal hover:text-slate-950">Download Resume</a>
+        </div>
+      </div>
+    </nav>
 
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-          <a class="navbar-brand" href="#">Autumn Trimble</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav justify-content-end">
-              <a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#education">Education</a>
-              <a class="nav-item nav-link" href="#experience">Experience</a>
-              <a class="nav-item nav-link" href="#skills">Skills</a>
+    <header class="mx-auto max-w-6xl px-6 pt-32 pb-20">
+      <div class="grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-center">
+        <div class="space-y-8">
+          <div class="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-widest text-brand.teal">
+            <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1">Strategic Program &amp; Operations Leader</span>
+            <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-white/80">Tech-for-Good Advocate</span>
+          </div>
+          <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            Calm, measurable delivery for ambitious, mission-driven teams.
+          </h1>
+          <p class="text-lg text-slate-200/80">
+            I help leaders turn complex, cross-functional roadmaps into resilient programs—aligning research, engineering, and product partners while keeping people energized.
+          </p>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-200/80">
+              <div class="text-xs font-semibold uppercase tracking-widest text-brand.teal">What I unlock</div>
+              <ul class="mt-3 space-y-2">
+                <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-brand.teal"></span>Intake-to-execution systems that scale safely.</li>
+                <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-brand.teal"></span>Vendor + budget strategies that expand velocity.</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-4 text-sm text-slate-200/80">
+              <div class="text-xs font-semibold uppercase tracking-widest text-brand.teal">Who I partner with</div>
+              <ul class="mt-3 space-y-2">
+                <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-brand.teal"></span>Product &amp; research orgs scaling AI/ML efforts.</li>
+                <li class="flex items-start gap-2"><span class="mt-1 h-2 w-2 rounded-full bg-brand.teal"></span>Founders building wellness, accessibility, or health tech.</li>
+              </ul>
             </div>
           </div>
-        </nav>
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-brand.teal px-6 py-2 text-sm font-semibold text-slate-950 transition hover:bg-brand.teal/90">
+              Start a Conversation
+              <i class="fas fa-arrow-right text-xs"></i>
+            </a>
+            <a href="#projects" class="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-2 text-sm font-semibold text-white transition hover:border-brand.teal/60 hover:text-brand.teal">
+              View Personal Projects
+            </a>
+            <div class="flex items-center gap-4 text-2xl text-slate-200">
+              <a href="https://www.linkedin.com/in/autumntrimble/" class="transition hover:text-brand.teal" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/autumn-trimble/autumn-trimble.github.io" class="transition hover:text-brand.teal" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.facebook.com/autumn.trimble.75" class="transition hover:text-brand.teal" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-2xl shadow-brand.blue/20">
+            <img src="images/headshot.jpg" alt="Autumn Trimble" class="h-64 w-64 rounded-3xl object-cover shadow-lg shadow-brand.blue/30" loading="lazy">
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-5 text-sm leading-relaxed text-slate-200/80">
+            "Autumn is the calm in the chaos—she connects dots, keeps teams aligned, and gets complex launches over the finish line without burnout."
+            <div class="mt-3 text-xs uppercase tracking-wide text-brand.teal">Peer Feedback, Meta</div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    
-        <div class="jumbotron text-center justify-content-center">
-        <img class="img-fluid rounded" src="images/photo-resize-better.jpg" alt="">
-        <h1 class="mb-0 name">Autumn Trimble</h1> <br>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/autumntrimble/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/autumn-trimble/autumn-trimble.github.io">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.facebook.com/autumn.trimble.75">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div> 
-        <br>   
-        <p>Currently learning Web Development! <br>
-          Stay tuned for more projects and udpates.</p>
-        </p>
-    </div>
+    <main>
+      <section id="about" class="mx-auto max-w-6xl px-6 py-20">
+        <div class="space-y-10">
+          <div class="space-y-6">
+            <h2 class="text-3xl font-semibold tracking-tight text-white">About Autumn</h2>
+          <p class="text-lg text-slate-200/80">
+            Strategic program and operations leader with 6+ years scaling cross-functional systems in technical environments. I translate ambiguity into crisp playbooks that align research, engineering, product, and operations partners around measurable results.
+          </p>
+          <p class="text-lg text-slate-200/80">
+            Energized by mission-driven work, I unite stakeholders, simplify processes, and mentor leaders so teams can deliver ambitious roadmaps without sacrificing wellbeing.
+          </p>
+          <p class="text-lg text-slate-200/80">
+            Currently exploring mission-driven TPM roles and collaborations that infuse wellness into everyday product experiences—and always excited to mentor people in their professional journeys.
+          </p>
+          <div class="grid gap-6 lg:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 class="text-sm font-semibold uppercase tracking-widest text-brand.teal">What Teams Count On</h3>
+              <ul class="mt-4 space-y-3 text-sm text-slate-200/80">
+                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand.teal"></span>Intake-to-execution systems that multiply capacity while safeguarding quality.</li>
+                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand.teal"></span>Operational rigor that balances hardware, firmware, and vendor resources.</li>
+                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand.teal"></span>Mentorship and rituals that build psychologically safe, high-delivery teams.</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-6">
+              <h3 class="text-sm font-semibold uppercase tracking-widest text-brand.teal">Focus Areas</h3>
+              <ul class="mt-4 grid gap-2 text-sm text-slate-200/80">
+                <li>Technical program management</li>
+                <li>Hardware/software integration &amp; data pipelines</li>
+                <li>AI/ML dataset readiness &amp; reporting dashboards</li>
+                <li>Research operations &amp; experimentation</li>
+                <li>Vendor strategy &amp; workforce development</li>
+              </ul>
+            </div>
+            <div class="rounded-2xl border border-brand.teal/30 bg-slate-900/70 p-6">
+              <h3 class="text-sm font-semibold uppercase tracking-widest text-brand.teal">Recent Wins</h3>
+              <ul class="mt-4 space-y-2 text-sm text-slate-200/80">
+                <li>Shipped the lab’s largest full-body dataset (1,211 participants; 72PB).</li>
+                <li>Restructured vendor support to save $1.3M while increasing velocity.</li>
+                <li>Scaled participant throughput 9x with an intake-to-execution framework.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <!-- <section class="resume-section p-3 p-sm-5 d-flex align-items-center" id="about">
-          <div class="w-100">
-            <h1 class="mb-0">Autumn Trimble</h1>
-            <div class="subheading mb-2 pl-2">Pittsburgh, PA · (267) 371-3902 
-              <a href="mailto:name@email.com">Autumn_Trimble@outlook.com</a>
-              <br>
-              <div class="align-items-center">
-                  <a href="https://www.linkedin.com/in/autumntrimble/">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/autumn-trimble/autumn-trimble.github.io">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.facebook.com/autumn.trimble.75">
-                      <i class="fab fa-facebook-f"></i>
-              </div>
-                <p class="mb-2 mt-2"> Currently learning Web Development!
-              <br> Stay tuned for more projects and udpates.
+      <section id="highlights" class="bg-slate-900/70 py-20">
+        <div class="mx-auto flex max-w-6xl flex-col gap-16 px-6 lg:flex-row lg:items-center">
+          <div class="max-w-xl space-y-5">
+            <h2 class="text-3xl font-semibold tracking-tight text-white">Impact Highlights</h2>
+            <p class="text-lg text-slate-200/80">
+              Each engagement blends strategic clarity with thoughtful execution. Here are a few outcomes that teams celebrate.
             </p>
-            
-            <div class="arrow bounce">
-              <a class="fa fa-arrow-down fa-2x" href="#education"></a>
+          </div>
+          <div class="grid flex-1 gap-6 sm:grid-cols-2">
+            <div class="rounded-3xl border border-brand.teal/20 bg-slate-950/60 p-6 shadow-xl shadow-brand.teal/10">
+              <div class="text-4xl font-bold text-brand.teal">72PB</div>
+              <p class="mt-3 text-sm text-slate-200/80">Delivered the lab’s largest full-body dataset—1,211 participants fueling foundational ML models.</p>
+            </div>
+            <div class="rounded-3xl border border-brand.teal/20 bg-slate-950/60 p-6 shadow-xl shadow-brand.teal/10">
+              <div class="text-4xl font-bold text-brand.teal">900%</div>
+              <p class="mt-3 text-sm text-slate-200/80">Scaled participant throughput from 200 to 1,800 annually with reinvented intake-to-execution systems.</p>
+            </div>
+            <div class="rounded-3xl border border-brand.teal/20 bg-slate-950/60 p-6 shadow-xl shadow-brand.teal/10">
+              <div class="text-4xl font-bold text-brand.teal">$1.3M</div>
+              <p class="mt-3 text-sm text-slate-200/80">Reduced vendor spend while increasing delivery velocity through redesigned support models.</p>
+            </div>
+            <div class="rounded-3xl border border-brand.teal/20 bg-slate-950/60 p-6 shadow-xl shadow-brand.teal/10">
+              <div class="text-4xl font-bold text-brand.teal">2K+</div>
+              <p class="mt-3 text-sm text-slate-200/80">First non-engineer to keynote Meta Reality Labs’ Codec Avatars Symposium for 2,000+ attendees.</p>
             </div>
           </div>
-        </section> -->
-      
-        
-        <hr class="m-0">
+        </div>
+      </section>
 
-        <section class="resume-section p-2 p-sm-4 d-flex align-items-center" id="education">
-            <div>
-              <h2 class="mb-5">Education</h2>
-
-              <div class="resume-item d-flex flex-column flex-sm-row justify-content-between mb-3 pl-4">
-                  <div class="resume-content">
-                    <h3 class="mb-2">Bachelors of Science: Psychology & Sociology</h3>
-                    <div class="subheading mb-2"> <a href="https://www.pitt.edu/">University of Pittsburgh</a> </div>
-                    <span class="dates">September 2014 - December 2017</span>
-                  </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-sm-row justify-content-between mb-3 pl-5">
-                 <div class="resume-content">
-                   <h6 class ="mb-0">Dircted Research</h6>
-                   <div class="subheading mb-0"> <a href="http://psychology.pitt.edu/people/john-levine-phd">Dr. John Levine</a> | Group Processes Lab</div>
-                   <span class="dates">November 2016 - August 2017</span>  
-                   <div> 
-                   <ul class="mt-2 pl-5">
-                       <li>Coded videos of group interactions to look for trends in what information participants use to assert and justify their argument</li>
-                       <li>Utilized programs such as Excel and Qualtrics to code and store data in order to allow for easy manipulation of information to utilize in statistical analysis</li>
-                       <li>Edited and revised drafts of research papers to be submitted for review</li>olve all problems and answers questions of phone interviewers concerning the protocol, database, and technology</li>
-                     </ul>
-                 </div>
-                </div> 
-               </div>
-
-               <div class="resume-item d-flex flex-column flex-sm-row justify-content-between mb-3 pl-5">
-                  <div class="resume-content">
-                    <h6 class ="mb-0">Key Courses</h6>
-                      <ul class="m-2 pl-5">
-                        <li>Abnormal Psychology</li>
-                        <li>Psychology Research Methods</li>
-                        <li>Sociology Resarch Methods</li>
-                      </ul>
-                  </div>
+      <section id="experience" class="mx-auto max-w-6xl px-6 py-20">
+        <div class="space-y-5">
+          <h2 class="text-3xl font-semibold tracking-tight text-white">Experience Snapshot</h2>
+          <p class="text-lg text-slate-200/80">
+            A blend of technical program management, research operations, and people leadership across immersive tech and public health.
+          </p>
+        </div>
+        <div class="mt-12 space-y-12">
+          <article class="relative rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-brand.blue/10">
+            <header class="flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold text-white">Meta Reality Labs — Codec Avatars &amp; Interactions</h3>
+                <p class="text-sm text-slate-300">Senior Technical Program Manager</p>
               </div>
-           </div>
-          </section>
-
-
-        <hr class="m-0">
-
-        <section class="resume-section p-2 p-sm-4 d-flex align-items-center" id="experience">
-          <div class="w-100">
-            <h2 class="mb-5">Experience</h2>
-
-              <div class="resume-item d-flex flex-column flex-sm-row justify-content-between mb-3 pl-2">
-                <div class="resume-content">
-                  <h3 class="mb-0">Research Assistant</h3>
-                  <div class="mb-0 pl-3">
-                  Filter, LLC for  <a href="https://tech.fb.com/codec-avatars-facebook-reality-labs/">Facebook Reality Labs</a>
-                  <br>Janurary 2018 - Present
-                </div> 
-                  <div>
-                  <ul class="mt-2 pl-5">
-                      <li>Condcuts research studies on various capture systems with a large number of participants</li>
-                      <li>Helps to create, test, and modify the study tasks</li>
-                    </ul>
-                  </div>
-                </div>
+              <span class="rounded-full border border-white/15 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-slate-200/70">2021 – Present</span>
+            </header>
+            <p class="mt-4 text-xs uppercase tracking-wider text-slate-300/80">Trajectory: Program Manager (2021–2022) → Senior Program Manager (2022–2024) → Staff Program Manager (2024–2025)</p>
+            <div class="mt-6 space-y-4 text-sm text-slate-200/80">
+              <div>
+                <h4 class="text-xs font-semibold uppercase tracking-widest text-brand.teal">Program Delivery</h4>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>Coordinated hardware, firmware, research, and product partners to ship ML-ready datasets end to end.</li>
+                  <li>Led bring-up of capture systems (500+ cameras, 1,000+ lights) with PB-scale pipelines and zero critical launch slips.</li>
+                  <li>Delivered 320+ datasets, including the lab’s largest full-body collection (1,211 participants; 72PB).</li>
+                </ul>
               </div>
-              
-
-              <div class="resume-item d-flex flex-column flex-sm-row justify-content-between mb-3 pl-2">
-                <div class="resume-content">
-                  <h3 class ="mb-0">Supervisor</h3>
-                  <div class="subheading mb-0 pl-3">University of Pittsburgh Behavioral and Community Health Sciences
-                      <br class="dates">May 2016 - Feburary 2018
-                  </div>
-                  <div>  
-                    
-                    <ul class="mt-2 pl-5">
-                      <li>Manages a database of over 12,000 phone numbers to accurately reflect the protocol approved by the Telephone Consumer Protection Act to ensure phone interviewers have suitable and significant sample to call</li>
-                      <li>Screen and train new employees in interviewing techniques and procedures to maximize the number of completed and valid surveys</li>
-                      <li>Performs quality control measures by monitoring interviewers on phone calls and creating weekly productivity reports of all 25 interviewers that reflect their overall performance</li>
-                      <li>Resolve all problems and answers questions of phone interviewers concerning the protocol, database, and technology</li>
-                    </ul>
-                  </div>
-                  </div>
+              <div>
+                <h4 class="text-xs font-semibold uppercase tracking-widest text-brand.teal">Operational Scale</h4>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>Designed intake-to-execution frameworks that lifted annual capacity from 200 to 1,800 participants and enabled 16–20 concurrent projects.</li>
+                  <li>Modified legacy systems to avoid a two-year rebuild, unlocking pipelines for critical launches.</li>
+                </ul>
               </div>
-
-              <div class="resume-item d-flex flex-column flex-sm-row justify-content-between mb-3 pl-2">
-                  <div class="resume-content">
-                    <h3 class="mb-0">Research Assistant</h3>
-                    <div class="subheading mb-0 pl-3"><a href="https://www.hcii.cmu.edu">Carnegie Mellon University: Human-Computer Interaction Institute</a>
-                      <br class="dates">August 2017 - November 2017 
-                    </div>
-                      <div> 
-                      <ul class="mt-2 pl-5">
-                        <li>Utilize Excel spreadsheets of names and descriptions of Facebook groups in order to understand why the groups formed</li>
-                        <li>Conduct backgrund research and literature review of coding practicies and groups</li>
-                        <li>In total,coded 8,600 Facebook groups and separated them into five categories of reasons why the group seemed to have formed</li>
-                      </ul>
-                  </div>
-                </div> 
+              <div>
+                <h4 class="text-xs font-semibold uppercase tracking-widest text-brand.teal">Leadership &amp; Financial Stewardship</h4>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>Reduced vendor spend by $1.3M while increasing delivery velocity through redesigned support models.</li>
+                  <li>Managed 72-person vendor teams across four sites; mentored five project managers and a junior TPM to strengthen the leadership pipeline.</li>
+                  <li>Partnered with PMs and data scientists to build dashboards surfacing demographic and performance insights for executives.</li>
+                </ul>
               </div>
             </div>
-        </section>
+          </article>
 
-        <hr class="m-0">
-
-        <section class="resume-section p-2 p-sm-4 d-flex align-items-center" id="skills">
-            <div class="w-100">
-              <h2 class="mb-2">So, what can I do?</h2>
-            
-              <div class="resume-item d-flex flex-column flex-sm-row justify-content-between mb-5">
-                <div class="resume-content">
-                  <ul class="pl-5">
-                      <li>Well I created this as my <strong>first</strong> website! I'm looking forward to creating and building new projects as my education for Web Dev continues.</li>
-                      <li>I have kept 12 different plants alive for a year now. </li>
-                    </ul>
-                  <h3 class="mb-2 pl-1">Okay, but what other skills do I have?</h3>
-                    <ul class="pl-5">
-                      <li>Basic and functional understanding of HTML, CSS, Bootstrap. </li>
-                      <li>Beginner knowledge of Python</li>
-                      <li>Can work effectively in a group, as well as independently</li>
-                      <li>Strong attention to detail without missing the overall goal</li>
-                    </ul>
-                </div>
+          <article class="relative rounded-3xl border border-white/10 bg-white/5 p-8">
+            <header class="flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <h3 class="text-xl font-semibold text-white">Insight Global (Onsite Vendor at Meta)</h3>
+                <p class="text-sm text-slate-300">Project Manager</p>
               </div>
-            </div>  
-        </section>
+              <span class="rounded-full border border-white/15 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-slate-200/70">2020 – 2021</span>
+            </header>
+            <div class="mt-6 space-y-4 text-sm text-slate-200/80">
+              <div>
+                <h4 class="text-xs font-semibold uppercase tracking-widest text-brand.teal">Program Coordination</h4>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>Delivered 30+ interdisciplinary projects spanning experimental system development and deployment.</li>
+                  <li>Aligned engineering, research, and product teams on requirements, milestones, and risk mitigation.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-xs font-semibold uppercase tracking-widest text-brand.teal">Operational Rigor</h4>
+                <ul class="mt-2 list-disc space-y-2 pl-5">
+                  <li>Built intake workflows and retrospectives that improved throughput and established scalable operations.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>
-    $('.navbar-collapse a').click(function (e) {
-      $('.navbar-collapse').collapse('toggle');
+      <section id="education" class="mx-auto max-w-6xl px-6 pb-8">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8">
+          <h2 class="text-3xl font-semibold tracking-tight text-white">Education</h2>
+          <div class="mt-6 flex flex-wrap items-start justify-between gap-4 text-sm text-slate-200/80">
+            <div>
+              <div class="text-lg font-semibold text-white">University of Pittsburgh</div>
+              <div class="text-slate-300">Bachelor of Science, Psychology &amp; Sociology</div>
+            </div>
+            <span class="rounded-full border border-white/15 px-4 py-1 text-xs font-semibold uppercase tracking-wider text-slate-200/70">2014 – 2017</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="mx-auto max-w-6xl px-6 pt-12 pb-20">
+        <div class="space-y-5">
+          <h2 class="text-3xl font-semibold tracking-tight text-white">Core Strengths</h2>
+          <p class="text-lg text-slate-200/80">
+            The operating toolkit I rely on to keep delivery engines resilient, measurable, and&nbsp;people-centered.
+          </p>
+        </div>
+        <div class="mt-10 grid gap-8 md:grid-cols-3">
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-sm font-semibold uppercase tracking-widest text-brand.teal">Program &amp; Operations</h3>
+            <ul class="mt-4 space-y-2 text-sm text-slate-200/80 list-disc pl-5">
+              <li>Large-scale program delivery</li>
+              <li>Resource modeling &amp; workforce strategy</li>
+              <li>Risk analysis &amp; mitigation</li>
+              <li>Operational efficiency &amp; retrospectives</li>
+            </ul>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-sm font-semibold uppercase tracking-widest text-brand.teal">Systems Expertise</h3>
+            <ul class="mt-4 space-y-2 text-sm text-slate-200/80 list-disc pl-5">
+              <li>Hardware / firmware / software integration</li>
+              <li>Data pipelines &amp; ML dataset readiness</li>
+              <li>Automation &amp; reporting dashboards</li>
+              <li>Experimentation &amp; research operations</li>
+            </ul>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h3 class="text-sm font-semibold uppercase tracking-widest text-brand.teal">Leadership &amp; Tools</h3>
+            <ul class="mt-4 space-y-2 text-sm text-slate-200/80 list-disc pl-5">
+              <li>Stakeholder alignment &amp; storytelling</li>
+              <li>Team mentorship &amp; conflict resolution</li>
+              <li>Asana, Jira, Notion, Qualtrics</li>
+              <li>Advanced Excel &amp; Google Sheets</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="bg-slate-900/70 py-20">
+        <div class="mx-auto max-w-6xl px-6">
+          <div class="flex flex-wrap items-start justify-between gap-6">
+            <div class="max-w-xl space-y-5">
+              <h2 class="text-3xl font-semibold tracking-tight text-white">Personal Projects</h2>
+              <p class="text-lg text-slate-200/80">
+                Experiments and launches where I blend program leadership with hands-on building to keep my craft sharp.
+              </p>
+            </div>
+            <a href="https://github.com/autumn-trimble" class="inline-flex items-center gap-2 text-sm font-semibold text-brand.teal transition hover:text-brand.teal/80">
+              <span>Explore more on GitHub</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="mt-12 grid gap-8 lg:grid-cols-3">
+            <article class="relative flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-brand.blue/10">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-brand.teal">
+                  <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand.teal/10 text-brand.teal"><i class="fas fa-coffee"></i></span>
+                  Client Launch
+                </div>
+                <h3 class="text-xl font-semibold text-white">Cafe Verde Zelie</h3>
+                <p class="text-sm text-slate-200/80">Designed and launched a storytelling-driven café site featuring menus, events, and seasonal promotions to boost community visibility.</p>
+              </div>
+              <div class="mt-6 flex items-center justify-between text-sm text-brand.teal">
+                <span>Brand Strategy • Web Delivery</span>
+                <a href="https://cafeverdezelie.com" class="inline-flex items-center gap-1 transition hover:text-brand.teal/80" target="_blank" rel="noopener"><span>Visit site</span><i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="relative flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-brand.blue/10">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-brand.teal">
+                  <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand.teal/10 text-brand.teal"><i class="fas fa-tint"></i></span>
+                  Product Experiment
+                </div>
+                <h3 class="text-xl font-semibold text-white">Water Intake Calculator</h3>
+                <p class="text-sm text-slate-200/80">Built a responsive hydration calculator that personalizes daily targets, blending wellness research with easy habit prompts.</p>
+              </div>
+              <div class="mt-6 flex items-center justify-between text-sm text-brand.teal">
+                <span>UX Research • Frontend Build</span>
+                <a href="https://thewaterintakecalculator.com" class="inline-flex items-center gap-1 transition hover:text-brand.teal/80" target="_blank" rel="noopener"><span>Visit site</span><i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+
+            <article class="relative flex h-full flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-brand.blue/10">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3 text-xs font-semibold uppercase tracking-wider text-brand.teal">
+                  <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand.teal/10 text-brand.teal"><i class="fas fa-newspaper"></i></span>
+                  In Progress
+                </div>
+                <h3 class="text-xl font-semibold text-white">Curated Research Roundups</h3>
+                <p class="text-sm text-slate-200/80">Developing a weekly digest that distills new wellness, AI, and program ops research into quick, actionable briefs.</p>
+              </div>
+              <div class="mt-6 flex items-center justify-between text-sm text-brand.teal">
+                <span>Strategy • Product Ops</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="insights" class="mx-auto max-w-6xl px-6 py-20">
+        <div class="max-w-3xl space-y-4">
+          <h2 class="text-3xl font-semibold tracking-tight text-white">Writing &amp; Insights</h2>
+          <p class="text-lg text-slate-200/80">
+            A small but growing library of reflections. With just a couple of long-form posts today, I’m keeping things lightweight—no search or separate archive yet. As more essays ship, I’ll spin them into their own home.
+          </p>
+        </div>
+        <div class="mt-10 space-y-6">
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-lg shadow-brand.blue/10">
+            <div class="flex flex-wrap items-start justify-between gap-4">
+              <h3 class="text-xl font-semibold text-white">Learnings from My First Keynote</h3>
+              <span class="text-xs font-semibold uppercase tracking-widest text-brand.teal">Spring 2024</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-200/80">In the spring of 2024, I stood on the Symposium stage delivering my very first keynote—equal parts thrilling and terrifying. Saying yes taught me as much about story, resilience, and community as it did about slides.</p>
+            <div class="mt-4 flex flex-wrap items-center gap-4 text-sm">
+              <a href="#first-keynote" class="inline-flex items-center gap-2 font-semibold text-brand.teal transition hover:text-brand.teal/80">
+                <span>Read full story</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-lg shadow-brand.blue/10">
+            <div class="flex flex-wrap items-start justify-between gap-4">
+              <h3 class="text-xl font-semibold text-white">Why I Force Gratitudes in Meetings</h3>
+              <span class="text-xs font-semibold uppercase tracking-widest text-brand.teal">Team Rituals</span>
+            </div>
+            <p class="mt-3 text-sm text-slate-200/80">For three years I closed every weekly meeting with “Thanks &amp; Shout-Outs,” a ritual that kept a 28-person research team collaborative, scrappy, and grounded—even when everything else was in flux.</p>
+            <div class="mt-4 flex flex-wrap items-center gap-4 text-sm">
+              <a href="#gratitude-practice" class="inline-flex items-center gap-2 font-semibold text-brand.teal transition hover:text-brand.teal/80">
+                <span>Read the practice</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <section id="contact" class="bg-slate-900/70 pt-20 pb-12">
+        <div class="mx-auto max-w-4xl px-6 text-center">
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-brand.teal">
+            Let's collaborate
+          </span>
+          <h2 class="mt-6 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            Ready to build calm, resilient systems together?
+          </h2>
+          <p class="mt-4 text-lg text-slate-200/80">
+            I'm open to TPM roles, advisory partnerships, and conversations on tech-for-good initiatives. Drop a line and let's explore what impact looks like for your team.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm">
+            <a href="mailto:Autumn_Trimble@outlook.com" class="inline-flex items-center gap-2 rounded-full bg-brand.teal px-6 py-3 font-semibold text-white transition hover:bg-brand.teal/95"><i class="fas fa-envelope"></i> Email Autumn_Trimble@outlook.com</a>
+            <a href="https://www.linkedin.com/in/autumntrimble/" class="inline-flex items-center gap-2 rounded-full border border-white/10 px-6 py-3 font-semibold text-white transition hover:border-brand.teal/60 hover:text-brand.teal"><i class="fab fa-linkedin-in"></i> Connect on LinkedIn</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="first-keynote" class="mx-auto mt-24 max-w-4xl px-6 pt-12 pb-20">
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-10 shadow-xl shadow-brand.blue/10">
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-brand.teal">Blog</span>
+          <h2 class="mt-4 text-3xl font-semibold tracking-tight text-white">Learnings from My First Keynote</h2>
+          <p class="mt-4 text-sm text-slate-300">Spring 2024 • Meta Reality Labs Symposium</p>
+          <div class="mt-6 space-y-5 text-base leading-relaxed text-slate-200/85">
+            <p>In the spring of 2024, I found myself on stage at Symposium giving my very first keynote talk. Up until then, the biggest “crowd” I’d presented to was an update to my organization of about 50 people. Saying yes to a keynote was equal parts exciting and terrifying.</p>
+            <p>I knew it would stretch me, but I also knew I’d regret turning it down. I’m glad I didn’t overthink it before saying yes. I learned more in a few months of prep than I had in years of smaller talks. And I learned that a keynote isn’t just about presenting slides. It’s about story, resilience, feedback, and the people who cheer you on when you’re knee-deep in self-doubt.</p>
+            <p>Here are six of the biggest things I took away:</p>
+          </div>
+          <button id="blog-toggle-keynote" type="button" data-toggle-target="blog-keynote-body" class="mt-8 inline-flex items-center gap-2 rounded-full border border-brand.teal/60 px-5 py-2 text-sm font-semibold text-brand.teal transition hover:bg-brand.teal hover:text-slate-950" aria-expanded="false" aria-controls="blog-keynote-body">
+            <span class="blog-toggle-label">Read full post</span>
+            <i class="fas fa-chevron-down blog-toggle-icon text-xs"></i>
+          </button>
+          <div id="blog-keynote-body" class="mt-8 hidden space-y-6 text-base leading-relaxed text-slate-200/85">
+            <p><strong>Lesson 1. If your story’s fuzzy, start by gathering all the slides.</strong></p>
+            <p>There are two kinds of keynote preppers: “The Collector,” who asks for specific slides to fit their story, and “The Gatherer,” who asks for every slide possible, then builds a narrative from there. I thought I was a Collector. Turns out I was a Collector without a story, which basically meant I was flying blind. Lesson learned: when in doubt, Gather first.</p>
+            <p><strong>Lesson 2. Be passionate about your story and don’t be afraid to pivot.</strong></p>
+            <p>My first storyline? Mario Kart. (Yes, really. And no, it was not good.) In my head it was clever; in reality it was awkward. After bombing my first practice run, two colleagues asked me big questions: What really matters to you? Why do you show up every day?</p>
+            <p>Those questions led me to the story I actually cared about: connecting with my family (and avoiding the PA Turnpike). Once I anchored my talk in something real, everything clicked.</p>
+            <p><strong>Lesson 3. Back. Up. Everything.</strong></p>
+            <p>Ten days before the talk, my deck crashed. Three days of work disappeared. I was gearing up for a full-on panic when my manager told me the story of how Pixar almost lost Toy Story 2. It’s actually an inspiring story, because the setback made the final product better. Compared to that, my keynote felt fixable.</p>
+            <p>Starting over gave me sharper focus. Resilience is a muscle, and this was me getting a very intense workout.</p>
+            <p><strong>Lesson 4. Feedback is the best (and scariest) gift.</strong></p>
+            <p>Walking into my first practice talk, I braced myself like I was stepping into a roast (and not the fun kind where they end with compliments). I’d heard stories of how brutal these sessions could be. One mentor even told me he nearly had a breakdown after his first big talk.</p>
+            <p>I walked in with my head high, palms sweaty, but ready for feedback. Every piece made the final talk stronger. Shifting my mindset from “feedback = judgment” to “feedback = someone cares enough to help me succeed” was a game-changer.</p>
+            <p>Feedback isn’t easy. Some of it was tough, some encouraging, and some not very helpful (“I don’t like the way you said that one thing, but I have no idea how to make it better”). But if everyone had only said nice things, my talk wouldn’t have improved.</p>
+            <p><strong>Lesson 5. Shared language isn’t always shared.</strong></p>
+            <p>At one point, I realized a common versioning term we used meant different things to different people. Slightly different at best, drastically different at worst. That forced me to document, clarify, and align.</p>
+            <p>The moment I presented the new definitions in practice and no one objected, I knew we’d landed in the right place. Sometimes the quiet nods are the biggest wins. And yes, I documented that new terminology in our shared dictionary immediately.</p>
+            <p><strong>Lesson 6. Lean on your people.</strong></p>
+            <p>There were plenty of moments when I thought, Why did I say yes to this? My manager reassured me: “If you’re asking that, you’re doing it right.” My director admitted he asks himself the same question every time. Knowing even seasoned speakers feel that doubt made me breathe easier.</p>
+            <p>And then there was my support system. My team literally made shirts with my face on them and showed up in the front row of a 2,000+ auditorium wearing them proudly. (Someone even wore theirs for a passport photo. That’s commitment.) Seeing 150 people wearing my face gave me both confidence and comic relief.</p>
+            <p>Friends dropped off Celsius cases. A whiteboard of pep notes appeared at my desk. Every time I spiraled, someone pulled me back. It was humbling, hilarious, and unforgettable.</p>
+            <p><strong>Looking back</strong></p>
+            <p>When I think about that talk, I don’t just remember the keynote itself. I remember the failed Mario Kart slides, the slide crash, the brutally honest practice sessions, and the laughter in between.</p>
+            <p>I said yes to something that scared me. I stumbled, adjusted, and came out stronger. Next time, I’ll walk in with backups, clearer stories, and maybe fewer Mario Kart references. But most importantly, I’ll walk in knowing I can do this — especially with my people behind me.</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="gratitude-practice" class="mx-auto mt-16 max-w-4xl px-6 pt-12 pb-20">
+        <article class="rounded-3xl border border-white/10 bg-white/5 p-10 shadow-xl shadow-brand.blue/10">
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-brand.teal">Blog</span>
+          <h2 class="mt-4 text-3xl font-semibold tracking-tight text-white">Why I Force Gratitudes in Meetings</h2>
+          <div class="mt-6 space-y-5 text-base leading-relaxed text-slate-200/85">
+            <p>For three years, I led a multidisciplinary team of 28 people: mechanical engineers, research engineers, systems engineers, vendor employees, research assistants, and technical integrators. And every single week, I made them say thank you.</p>
+            <p>Okay, maybe “forced” is a little dramatic. Let me explain.</p>
+          <button id="blog-toggle-gratitude" type="button" data-toggle-target="blog-gratitude-body" class="mt-8 inline-flex items-center gap-2 rounded-full border border-brand.teal/60 px-5 py-2 text-sm font-semibold text-brand.teal transition hover:bg-brand.teal hover:text-slate-950" aria-expanded="false" aria-controls="blog-gratitude-body">
+            <span class="blog-toggle-label">Read full post</span>
+            <i class="fas fa-chevron-down blog-toggle-icon text-xs"></i>
+          </button>
+          <div id="blog-gratitude-body" class="mt-8 hidden space-y-6 text-base leading-relaxed text-slate-200/85">
+            <p>We met for one hour every week. Our team was experimental and research-driven, serving scientists who needed massive datasets to build state-of-the-art machine learning models. We built prototype devices, ran complex in-house systems that captured petabytes of data, and processed that data into usable formats. On average, we juggled 16 projects at a time.</p>
+            <p>Things changed constantly. Prototypes failed. Priorities flipped after months of hard work. Customers changed their minds after we’d already delivered. We had everything working against us. The one thing we couldn’t afford was to have us working against each other.</p>
+            <p>So at the end of every meeting, I pulled up a blank slide labeled Thanks &amp; Shout-Outs. I’d ask, “What thank-yous do you have for your teammates?”</p>
+            <p>The first time I tried it, the room was silent. I didn’t move on. I waited. Finally, someone raised their hand and thanked a teammate for unblocking a tricky bug. I wrote it down. Then another person thanked someone for teaching them a new process. And then more hands shot up.</p>
+            <p>Week after week, it became routine. No matter how many agenda items we had, we always made time for gratitude. Eventually, I had to shrink the font to fit three slides’ worth of thank-yous.</p>
+            <p>And here’s why it mattered:</p>
+            <ul class="mt-4 space-y-3 list-disc pl-6 text-sm text-slate-200/80">
+              <li>Team members could revisit these slides when a project felt impossible or when they doubted themselves. It reminded them how their teammates saw them — as helpful, capable, and valuable.</li>
+              <li>It built trust and care across every role, level, and career stage. We celebrated contributions equally, whether it was debugging code, hauling hardware, or guiding someone through a new process.</li>
+              <li>I truly believe this one habit kept our team collaborative, scrappy, and resilient. Gratitude didn’t erase the stress or failures, but it gave us perspective. It reminded us we weren’t in it alone. And in an environment where everything else was unpredictable, gratitude was the thing we could count on.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-slate-950/90 py-10">
+      <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between">
+        <div>&copy; <span id="year"></span> Autumn Trimble. Crafted with purpose and curiosity.</div>
+        <div class="flex flex-wrap gap-4">
+          <a href="#about" class="transition hover:text-brand.teal">About</a>
+          <a href="#skills" class="transition hover:text-brand.teal">Core Strengths</a>
+          <a href="#projects" class="transition hover:text-brand.teal">Personal Projects</a>
+          <a href="#insights" class="transition hover:text-brand.teal">Insights</a>
+          <a href="#contact" class="transition hover:text-brand.teal">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileNav = document.getElementById('mobile-navigation');
+
+    if (navToggle && mobileNav) {
+      navToggle.addEventListener('click', () => {
+        const isHidden = mobileNav.classList.toggle('hidden');
+        navToggle.setAttribute('aria-expanded', String(!isHidden));
+      });
+
+      mobileNav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileNav.classList.add('hidden');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      const mobileMedia = window.matchMedia('(min-width: 768px)');
+      const syncNavState = () => {
+        if (mobileMedia.matches) {
+          mobileNav.classList.add('hidden');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      };
+
+      if (mobileMedia.addEventListener) {
+        mobileMedia.addEventListener('change', syncNavState);
+      } else if (mobileMedia.addListener) {
+        mobileMedia.addListener(syncNavState);
+      }
+      syncNavState();
+    }
+
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
+
+    document.querySelectorAll('[data-toggle-target]').forEach((button) => {
+      const targetId = button.getAttribute('data-toggle-target');
+      const target = document.getElementById(targetId);
+      if (!target) return;
+
+      const label = button.querySelector('.blog-toggle-label');
+      const icon = button.querySelector('.blog-toggle-icon');
+
+      button.addEventListener('click', () => {
+        const isHidden = target.classList.toggle('hidden');
+        button.setAttribute('aria-expanded', String(!isHidden));
+
+        if (icon) {
+          icon.classList.toggle('fa-chevron-down', isHidden);
+          icon.classList.toggle('fa-chevron-up', !isHidden);
+        }
+
+        if (label) {
+          label.textContent = isHidden ? 'Read full post' : 'Hide full post';
+        }
+      });
     });
   </script>
 </body>
